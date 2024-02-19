@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Week6_Putting_All_together.Client.props" />
+</Project>

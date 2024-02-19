@@ -1,0 +1,55 @@
+﻿@page "/"
+@inject HttpClient httpClient
+
+<PageTitle>Home</PageTitle>
+
+<h1>Emergency Broadcast Message</h1>
+
+@if (string.IsNullOrEmpty(BroadcastMessage))
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="broadcast-box">
+        <p>@BroadcastMessage</p>
+    </div>
+}
+
+<h2>Cell Phone Number</h2>
+
+@if (string.IsNullOrEmpty(CellPhoneNumber))
+{
+    <p>Loading...</p>
+}
+else
+{
+    <p>@CellPhoneNumber</p>
+}
+
+@code {
+    private string BroadcastMessage { get; set; }
+    private string CellPhoneNumber { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            // Retrieve message broadcast message
+            var broadcastResponse = await httpClient.GetAsync("https://localhost:44358/api/My/GetBroadcastMessage");
+            broadcastResponse.EnsureSuccessStatusCode();
+            BroadcastMessage = await broadcastResponse.Content.ReadAsStringAsync();
+
+            // Retrieve cell phone number
+            var phoneResponse = await httpClient.GetAsync("https://localhost:44358/api/My/GetCellPhoneNumber");
+            phoneResponse.EnsureSuccessStatusCode();
+            CellPhoneNumber = await phoneResponse.Content.ReadAsStringAsync();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+            BroadcastMessage = "Error retrieving broadcast message.";
+            CellPhoneNumber = "Error retrieving cell phone number.";
+        }
+    }
+}

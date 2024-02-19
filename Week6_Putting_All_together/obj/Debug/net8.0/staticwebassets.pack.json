@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Km623\\source\\repos\\Week6_Putting_All_together\\Week6_Putting_All_together\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Week6_Putting_All_together.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Week6_Putting_All_together.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Km623\\source\\repos\\Week6_Putting_All_together\\Week6_Putting_All_together\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Km623\\source\\repos\\Week6_Putting_All_together\\Week6_Putting_All_together\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Km623\\source\\repos\\Week6_Putting_All_together\\Week6_Putting_All_together\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Km623\\source\\repos\\Week6_Putting_All_together\\Week6_Putting_All_together\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Week6_Putting_All_together.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Week6_Putting_All_together.props",
+      "PackagePath": "build\\Week6_Putting_All_together.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Week6_Putting_All_together.props",
+      "PackagePath": "buildMultiTargeting\\Week6_Putting_All_together.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Week6_Putting_All_together.props",
+      "PackagePath": "buildTransitive\\Week6_Putting_All_together.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
